@@ -21,7 +21,7 @@ export default function ServicesSection() {
       title: 'Threat Detection and Response',
       description:
         'Our advanced threat detection systems monitor your network 24/7 and more facility, our identifying and responding.',
-      color: 'bg-[#4B7BF5]',
+      color: 'bg-[#4318FF]',
       iconColor: 'text-white',
       link: '/services/threat-detection',
       isActive: true,
@@ -90,7 +90,7 @@ export default function ServicesSection() {
               key={service.id}
               className={cn(
                 'rounded-3xl p-8 relative overflow-hidden group',
-                service.isActive ? 'bg-[#4B7BF5]' : 'bg-[#051431]'
+                service.isActive ? 'bg-[#4318FF]' : 'bg-[#051431]'
               )}
             >
               {/* Background glow effect */}

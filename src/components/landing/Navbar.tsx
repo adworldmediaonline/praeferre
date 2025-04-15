@@ -13,15 +13,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative w-10 h-10">
+            <div className="relative w-40 h-10">
               <Image
-                src="/logo-shield.svg"
+                src="/praeferre-updated-logo-light.png"
                 alt=""
                 fill
                 className="object-contain"
               />
             </div>
-            <span className="text-white text-2xl font-bold">Secur</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -24,7 +24,7 @@ export default function HeroSection() {
           {/* Left column with text content */}
           <div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="text-blue-400">25 Years of </span>
+              <span className="text-[#4318FF]">25 Years of </span>
               <span className="text-white">Cyber security Expertise</span>
             </h1>
 

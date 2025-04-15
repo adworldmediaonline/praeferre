@@ -14,7 +14,7 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
   return (
     <div
       className={`rounded-xl mb-4 overflow-hidden transition-all duration-300 ${
-        isOpen ? 'bg-[#4B7BF5]' : 'bg-[#061a3a]'
+        isOpen ? 'bg-[#4318FF]' : 'bg-[#061a3a]'
       }`}
     >
       <button

@@ -24,7 +24,7 @@ export default function AboutSection() {
             {/* Badge overlay */}
             <div className="absolute -top-6 right-0 lg:-right-6 bg-white rounded-xl p-4 shadow-[0_4px_20px_rgba(0,0,0,0.2)] z-20 max-w-[260px]">
               <div className="flex items-center gap-3">
-                <div className="text-[#4B7BF5] text-5xl font-bold leading-none">
+                <div className="text-[#4318FF] text-5xl font-bold leading-none">
                   25+
                 </div>
                 <div className="font-medium text-[#1E293B]">
@@ -137,7 +137,7 @@ export default function AboutSection() {
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
               <Link
                 href="/about"
-                className="bg-[#4B7BF5] hover:bg-[#3A63D2] text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2 text-sm shadow-[0_4px_15px_rgba(75,123,245,0.4)]"
+                className="bg-[#4318FF] hover:bg-[#3A63D2] text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2 text-sm shadow-[0_4px_15px_rgba(75,123,245,0.4)]"
               >
                 More About Us
                 <svg

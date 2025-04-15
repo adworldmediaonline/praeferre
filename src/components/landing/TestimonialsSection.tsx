@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           {/* Section label */}
-          <div className="inline-block bg-[#4B7BF5]/10 text-[#4B7BF5] font-semibold text-sm py-2 px-4 rounded-full mb-4">
+          <div className="inline-block bg-[#4318FF]/10 text-[#4318FF] font-semibold text-sm py-2 px-4 rounded-full mb-4">
             Our Testimonial
           </div>
 
@@ -188,7 +188,7 @@ export default function TestimonialsSection() {
           <div className="flex justify-between items-center mt-8">
             <button
               ref={prevRef}
-              className="w-12 h-12 rounded-full bg-[#151B29] border border-[#25304C] text-[#4B7BF5] flex items-center justify-center transition-colors hover:bg-[#192132] focus:outline-none focus:ring-2 focus:ring-[#4B7BF5]/50 disabled:opacity-50"
+              className="w-12 h-12 rounded-full bg-[#151B29] border border-[#25304C] text-[#4318FF] flex items-center justify-center transition-colors hover:bg-[#192132] focus:outline-none focus:ring-2 focus:ring-[#4318FF]/50 disabled:opacity-50"
               aria-label="Previous testimonial"
             >
               <svg
@@ -210,7 +210,7 @@ export default function TestimonialsSection() {
 
             <button
               ref={nextRef}
-              className="w-12 h-12 rounded-full bg-[#4B7BF5] text-white flex items-center justify-center transition-colors hover:bg-[#3A63D2] focus:outline-none focus:ring-2 focus:ring-[#4B7BF5]/50 disabled:opacity-50"
+              className="w-12 h-12 rounded-full bg-[#4318FF] text-white flex items-center justify-center transition-colors hover:bg-[#3A63D2] focus:outline-none focus:ring-2 focus:ring-[#4318FF]/50 disabled:opacity-50"
               aria-label="Next testimonial"
             >
               <svg
@@ -252,7 +252,7 @@ export default function TestimonialsSection() {
         }
 
         .swiper-custom-bullet-active {
-          background-color: #4b7bf5;
+          background-color: #4318ff;
           width: 12px;
           height: 12px;
         }
