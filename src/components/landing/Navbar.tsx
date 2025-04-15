@@ -3,6 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+} from '@/components/ui/navigation-menu';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,50 +32,95 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <Link
-              href="/"
-              className="text-white font-medium hover:text-purple-400 transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="text-gray-400 font-medium hover:text-white transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="/services"
-              className="text-gray-400 font-medium hover:text-white transition-colors"
-            >
-              Services
-            </Link>
-            <Link
-              href="/pages"
-              className="text-gray-400 font-medium hover:text-white transition-colors"
-            >
-              Pages
-            </Link>
-            <Link
-              href="/shop"
-              className="text-gray-400 font-medium hover:text-white transition-colors"
-            >
-              Shop
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-400 font-medium hover:text-white transition-colors"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-400 font-medium hover:text-white transition-colors"
-            >
-              Contact
-            </Link>
-          </nav>
+          <div className="hidden md:flex items-center">
+            <NavigationMenu>
+              <NavigationMenuList className="gap-2">
+                {/* SECTORS */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    href="/sectors"
+                    className="text-white font-medium hover:text-purple-400 transition-colors px-3 py-2 text-sm uppercase"
+                  >
+                    SECTORS
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                {/* PRODUCTS */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    href="/products"
+                    className="text-gray-400 font-medium hover:text-white transition-colors px-3 py-2 text-sm uppercase"
+                  >
+                    PRODUCTS
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                {/* WHO ARE WE Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-gray-400 font-medium hover:text-white focus:text-white data-[state=open]:text-white transition-colors px-3 py-2 text-sm uppercase bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
+                    WHO ARE WE
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="w-48 bg-background/90 backdrop-blur-md rounded shadow-lg py-2 z-50">
+                      <li>
+                        <Link
+                          href="/about-team"
+                          className="block px-4 py-2 text-gray-400 hover:text-white hover:bg-accent/50"
+                        >
+                          About Our Team
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/company-history"
+                          className="block px-4 py-2 text-gray-400 hover:text-white hover:bg-accent/50"
+                        >
+                          Company History
+                        </Link>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                {/* PRICING */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    href="/pricing"
+                    className="text-gray-400 font-medium hover:text-white transition-colors px-3 py-2 text-sm uppercase"
+                  >
+                    PRICING
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                {/* RESOURCES Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-gray-400 font-medium hover:text-white focus:text-white data-[state=open]:text-white transition-colors px-3 py-2 text-sm uppercase bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
+                    RESOURCES
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="w-48 bg-background/90 backdrop-blur-md rounded shadow-lg py-2 z-50">
+                      <li>
+                        <Link
+                          href="/blogs"
+                          className="block px-4 py-2 text-gray-400 hover:text-white hover:bg-accent/50"
+                        >
+                          Blogs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/documentation"
+                          className="block px-4 py-2 text-gray-400 hover:text-white hover:bg-accent/50"
+                        >
+                          Documentation
+                        </Link>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
 
           {/* Right side buttons */}
           <div className="flex items-center gap-4">
@@ -135,7 +188,7 @@ export default function Navbar() {
               href="/contact"
               className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-[#4318FF] hover:bg-[#3A14E0] text-white rounded-full font-medium transition-colors"
             >
-              Get a Free Consultation
+              Contact Us
               <svg
                 width="16"
                 height="16"
@@ -229,60 +282,74 @@ export default function Navbar() {
         <div className="md:hidden bg-background border-t border-gray-800/50">
           <nav className="flex flex-col py-4 px-4">
             <Link
-              href="/"
+              href="/sectors"
               className="text-white font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Home
+              SECTORS
             </Link>
             <Link
-              href="/about"
+              href="/products"
               className="text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About
+              PRODUCTS
             </Link>
+
+            {/* WHO ARE WE Mobile */}
+            <div className="py-2">
+              <button
+                className="w-full text-left text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg flex justify-between items-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Link href="/about-team" className="block">
+                  About Our Team
+                </Link>
+              </button>
+              <button
+                className="w-full text-left text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg flex justify-between items-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Link href="/company-history" className="block">
+                  Company History
+                </Link>
+              </button>
+            </div>
+
             <Link
-              href="/services"
+              href="/pricing"
               className="text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Services
+              PRICING
             </Link>
-            <Link
-              href="/pages"
-              className="text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Pages
-            </Link>
-            <Link
-              href="/shop"
-              className="text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Shop
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact
-            </Link>
+
+            {/* RESOURCES Mobile */}
+            <div className="py-2">
+              <button
+                className="w-full text-left text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg flex justify-between items-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Link href="/blogs" className="block">
+                  Blogs
+                </Link>
+              </button>
+              <button
+                className="w-full text-left text-gray-400 font-medium py-3 hover:bg-gray-800/50 px-4 rounded-lg flex justify-between items-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Link href="/documentation" className="block">
+                  Documentation
+                </Link>
+              </button>
+            </div>
+
             <Link
               href="/contact"
               className="mt-4 flex items-center justify-center gap-2 px-5 py-3 bg-[#4318FF] hover:bg-[#3A14E0] text-white rounded-full font-medium transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Get a Free Consultation
+              Contact Us
               <svg
                 width="16"
                 height="16"
