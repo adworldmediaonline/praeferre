@@ -7,22 +7,22 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#050A1C] pt-24 pb-6">
       {/* Top curved border with circuit pattern */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-blue-500/20 rounded-b-3xl"></div>
+      <div className="absolute top-0 left-0 right-0 h-2 bg-[#00C875]/20 rounded-b-3xl"></div>
 
       {/* CTA Banner */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="bg-[#0a0e1d] rounded-3xl border border-blue-500/10 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center">
+        <div className="bg-[#0a0e1d] rounded-3xl border border-[#00C875]/10 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-              Discover How We Can <span className="text-blue-500">Support</span>{' '}
-              Your
+              Discover How We Can{' '}
+              <span className="text-[#00C875]">Support</span> Your
               <br />
               Secure Advancement.
             </h2>
           </div>
           <Link
             href="/contact"
-            className="rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 font-medium text-white flex items-center"
+            className="rounded-full bg-gradient-to-r from-[#00C875] to-[#00E5C2] px-8 py-3 font-medium text-white flex items-center"
           >
             Contact Us
             <svg
@@ -67,7 +67,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 hover:bg-blue-900/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] hover:bg-[#00C875]/20 transition-colors"
               >
                 <svg
                   width="18"
@@ -82,7 +82,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 hover:bg-blue-900/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] hover:bg-[#00C875]/20 transition-colors"
               >
                 <svg
                   width="18"
@@ -97,7 +97,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 hover:bg-blue-900/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] hover:bg-[#00C875]/20 transition-colors"
               >
                 <svg
                   width="18"
@@ -112,7 +112,7 @@ export default function Footer() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 hover:bg-blue-900/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] hover:bg-[#00C875]/20 transition-colors"
               >
                 <svg
                   width="18"
@@ -133,10 +133,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/malware-protection"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -151,10 +151,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/computer-security"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -169,10 +169,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/server-protection"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -187,10 +187,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/cyber-security"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -205,10 +205,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/security-monitoring"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -230,10 +230,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -248,10 +248,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -266,10 +266,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/pricing"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -284,10 +284,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/projects"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -302,10 +302,10 @@ export default function Footer() {
               <li>
                 <Link
                   href="/team"
-                  className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex items-center text-gray-400 hover:text-[#00C875] transition-colors"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-blue-500"
+                    className="w-4 h-4 mr-2 text-[#00C875]"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -327,7 +327,7 @@ export default function Footer() {
             <div className="space-y-6">
               {/* Location */}
               <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 mr-4">
+                <div className="w-12 h-12 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] mr-4">
                   <svg
                     width="24"
                     height="24"
@@ -343,7 +343,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-blue-400 font-medium mb-1">Location</h4>
+                  <h4 className="text-[#00C875] font-medium mb-1">Location</h4>
                   <p className="text-gray-400">
                     932 Dogwood Road,Chapel Hill,North Carolina
                   </p>
@@ -352,7 +352,7 @@ export default function Footer() {
 
               {/* Phone */}
               <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 mr-4">
+                <div className="w-12 h-12 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] mr-4">
                   <svg
                     width="24"
                     height="24"
@@ -367,7 +367,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-blue-400 font-medium mb-1">Phone</h4>
+                  <h4 className="text-[#00C875] font-medium mb-1">Phone</h4>
                   <p className="text-gray-400">
                     +165-5577-8749, +165-3564-7488
                   </p>
@@ -376,7 +376,7 @@ export default function Footer() {
 
               {/* Opening Hour */}
               <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-[#0d1229] border border-blue-900/40 flex items-center justify-center text-blue-400 mr-4">
+                <div className="w-12 h-12 rounded-full bg-[#0d1229] border border-[#00C875]/40 flex items-center justify-center text-[#00C875] mr-4">
                   <svg
                     width="24"
                     height="24"
@@ -392,7 +392,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-blue-400 font-medium mb-1">
+                  <h4 className="text-[#00C875] font-medium mb-1">
                     Opening Hour
                   </h4>
                   <p className="text-gray-400">Mon - Sat: 10.00 AM - 4.00 PM</p>
@@ -408,7 +408,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 mb-4 md:mb-0">
             © 2024 By{' '}
-            <Link href="/" className="text-blue-500 hover:underline">
+            <Link href="/" className="text-[#00C875] hover:underline">
               Secur
             </Link>
             . All Rights Reserved.

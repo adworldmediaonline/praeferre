@@ -24,7 +24,7 @@ export default function HeroSection() {
           {/* Left column with text content */}
           <div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="text-[#4318FF]">25 Years of </span>
+              <span className="text-primary">25 Years of </span>
               <span className="text-white">Cyber security Expertise</span>
             </h1>
 
@@ -45,12 +45,12 @@ export default function HeroSection() {
                 placeholder="Enter Your Email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className="bg-[#0A1224] border border-gray-700 rounded-full px-6 py-3 flex-grow text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="bg-[#0A1224] border border-gray-700 rounded-full px-6 py-3 flex-grow text-white focus:outline-none focus:ring-2 focus:ring-primary/50"
                 required
               />
               <button
                 type="submit"
-                className="bg-[#4318FF] hover:bg-[#3A14E0] text-white rounded-full px-6 py-3 font-medium transition-colors flex items-center justify-center gap-2"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 font-medium transition-colors flex items-center justify-center gap-2"
               >
                 Get A Free Quote
                 <svg
@@ -96,7 +96,7 @@ export default function HeroSection() {
                 className="absolute left-0 bottom-1/2 transform -translate-x-10 translate-y-24 z-20 bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors"
                 aria-label="Play video"
               >
-                <div className="text-purple-600">
+                <div className="text-primary">
                   <svg
                     width="24"
                     height="24"
@@ -126,7 +126,7 @@ export default function HeroSection() {
       {/* Trusted by logos section */}
       <div className="container mx-auto px-4 mt-20">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
-          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50 border-2 border-primary/10 hover:border-primary/20">
             <Image
               src="/sponsor/comp-1.png"
               alt="Secure Minded"
@@ -135,7 +135,7 @@ export default function HeroSection() {
               className="object-contain h-full w-auto"
             />
           </div>
-          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50 border-2 border-primary/10 hover:border-primary/20">
             <Image
               src="/sponsor/comp-2.png"
               alt="Security Protection"
@@ -144,7 +144,7 @@ export default function HeroSection() {
               className="object-contain h-full w-auto"
             />
           </div>
-          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50 border-2 border-primary/10 hover:border-primary/20">
             <Image
               src="/sponsor/comp-3.png"
               alt="Security"
@@ -153,7 +153,7 @@ export default function HeroSection() {
               className="object-contain h-full w-auto"
             />
           </div>
-          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50 border-2 border-primary/10 hover:border-primary/20">
             <Image
               src="/sponsor/comp-4.png"
               alt="Security Squared"
@@ -162,7 +162,7 @@ export default function HeroSection() {
               className="object-contain h-full w-auto"
             />
           </div>
-          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50 border-2 border-primary/10 hover:border-primary/20">
             <Image
               src="/sponsor/comp-5.jpg"
               alt="TechShield"

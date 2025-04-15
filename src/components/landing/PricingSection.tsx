@@ -58,7 +58,7 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           {/* Section label */}
-          <div className="inline-block bg-[#4B7BF5]/10 text-[#4B7BF5] font-semibold text-sm py-2 px-4 rounded-full mb-4">
+          <div className="inline-block bg-[#00C875]/10 text-[#00C875] font-semibold text-sm py-2 px-4 rounded-full mb-4">
             Pricing Plan
           </div>
 
@@ -76,7 +76,7 @@ export default function PricingSection() {
               className={cn(
                 'rounded-3xl overflow-hidden relative bg-[#051431]',
                 plan.isPopular
-                  ? 'p-[1px] bg-gradient-to-r from-[#4B7BF5] via-[#6169FA] to-[#7B5EFB]'
+                  ? 'p-[1px] bg-gradient-to-r from-[#00C875] via-[#00D8A4] to-[#00E5C2]'
                   : 'border border-gray-800/50'
               )}
             >
@@ -92,7 +92,7 @@ export default function PricingSection() {
                 {/* "Popular" badge */}
                 {plan.isPopular && (
                   <div className="absolute top-0 right-8">
-                    <span className="bg-[#4B7BF5] text-white text-xs font-semibold px-4 py-1 rounded-b-md">
+                    <span className="bg-[#00C875] text-white text-xs font-semibold px-4 py-1 rounded-b-md">
                       Popular
                     </span>
                   </div>
@@ -122,8 +122,8 @@ export default function PricingSection() {
                   className={cn(
                     'flex justify-center items-center h-12 rounded-full text-center font-medium transition-colors mb-8',
                     plan.isPopular
-                      ? 'bg-gradient-to-r from-[#4B7BF5] to-[#7B5EFB] text-white'
-                      : 'border border-[#4B7BF5] text-[#4B7BF5] hover:bg-[#4B7BF5]/10'
+                      ? 'bg-gradient-to-r from-[#00C875] to-[#00E5C2] text-white'
+                      : 'border border-[#00C875] text-[#00C875] hover:bg-[#00C875]/10'
                   )}
                 >
                   Get Started
@@ -137,7 +137,7 @@ export default function PricingSection() {
                         className={cn(
                           'w-6 h-6 flex-shrink-0 rounded-full flex items-center justify-center',
                           feature.included
-                            ? 'bg-[#4B7BF5]/10 text-[#4B7BF5]'
+                            ? 'bg-[#00C875]/10 text-[#00C875]'
                             : 'border border-gray-700 text-gray-600'
                         )}
                       >

@@ -37,7 +37,7 @@ export default function WhyChooseSection() {
     {
       value: '25+',
       label: 'Years Of Experience',
-      color: 'bg-gradient-to-r from-blue-500 to-blue-600',
+      color: 'bg-gradient-to-r from-primary/70 to-primary',
     },
   ];
 
@@ -47,7 +47,7 @@ export default function WhyChooseSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
           <div className="relative">
-            <div className="relative z-10 h-[500px] lg:h-[600px] w-full overflow-hidden rounded-3xl bg-gradient-to-b from-[#094AB2]/80 to-[#042454]">
+            <div className="relative z-10 h-[500px] lg:h-[600px] w-full overflow-hidden rounded-3xl bg-gradient-to-b from-primary/80 to-primary/50">
               <Image
                 src="/whyChooseUs/why-choose-us.webp"
                 alt="Advanced Security Shield"
@@ -60,13 +60,13 @@ export default function WhyChooseSection() {
               <div className="absolute inset-0 bg-[url('/circuit-pattern.png')] opacity-30 mix-blend-overlay"></div>
 
               {/* Decorative border glow */}
-              <div className="absolute inset-0 rounded-3xl border border-[#4B7BF5]/30 shadow-[0_0_20px_rgba(75,123,245,0.4)]"></div>
+              <div className="absolute inset-0 rounded-3xl border border-primary/30 shadow-[0_0_20px_rgba(146,208,80,0.4)]"></div>
             </div>
 
             {/* Badge overlay */}
             <div className="absolute -bottom-6 left-0 lg:-left-6 bg-white rounded-xl py-4 px-6 shadow-[0_4px_20px_rgba(0,0,0,0.2)] z-20">
               <div className="flex items-center gap-3">
-                <div className="text-[#4B7BF5]">
+                <div className="text-primary">
                   <svg
                     width="32"
                     height="32"
@@ -97,14 +97,14 @@ export default function WhyChooseSection() {
             </div>
 
             {/* Decorative glow effects */}
-            <div className="absolute -top-10 -left-10 w-80 h-80 bg-[#4B7BF5]/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-[#4B7BF5]/10 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-[#4B7BF5]/20 rounded-full blur-xl"></div>
+            <div className="absolute -top-10 -left-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-primary/20 rounded-full blur-xl"></div>
           </div>
 
           {/* Right side - Content */}
           <div>
-            <h3 className="text-[#4B7BF5] font-semibold mb-4">
+            <h3 className="text-primary font-semibold mb-4">
               Why Choose Secur
             </h3>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -124,10 +124,10 @@ export default function WhyChooseSection() {
                   <div className="flex flex-col">
                     {/* Feature icon in blue square */}
                     <div className="mb-6">
-                      <div className="w-[68px] h-[68px] bg-[#4B7BF5]/10 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                      <div className="w-[68px] h-[68px] bg-primary/10 rounded-2xl flex items-center justify-center relative overflow-hidden">
                         {/* Icon background glow */}
-                        <div className="absolute inset-0 bg-[#4B7BF5]/5 rounded-2xl"></div>
-                        <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-[#4B7BF5]/10 rounded-full blur-lg"></div>
+                        <div className="absolute inset-0 bg-primary/5 rounded-2xl"></div>
+                        <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-primary/10 rounded-full blur-lg"></div>
 
                         {/* Icon */}
                         <svg
@@ -136,7 +136,7 @@ export default function WhyChooseSection() {
                           viewBox="0 0 32 32"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="text-[#4B7BF5]"
+                          className="text-primary"
                         >
                           {feature.id === 1 ? (
                             // Gear icon for Cutting-Edge Technology
@@ -208,7 +208,7 @@ export default function WhyChooseSection() {
         {/* Achievement Stats Section */}
         <div className="mt-28">
           <div className="text-center mb-10">
-            <div className="inline-block bg-[#4B7BF5]/10 text-[#4B7BF5] font-semibold text-sm py-2 px-4 rounded-full mb-4">
+            <div className="inline-block bg-primary/10 text-primary font-semibold text-sm py-2 px-4 rounded-full mb-4">
               Our Achievement
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white">

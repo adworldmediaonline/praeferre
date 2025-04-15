@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-[#030712] overflow-hidden">
+    <section className="py-20 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
@@ -18,13 +18,13 @@ export default function AboutSection() {
               />
 
               {/* Decorative border glow */}
-              <div className="absolute inset-0 rounded-3xl border border-[#4B7BF5]/30 shadow-[0_0_15px_rgba(75,123,245,0.3)]"></div>
+              <div className="absolute inset-0 rounded-3xl border border-primary/30 shadow-[0_0_15px_rgba(146,208,80,0.3)]"></div>
             </div>
 
             {/* Badge overlay */}
             <div className="absolute -top-6 right-0 lg:-right-6 bg-white rounded-xl p-4 shadow-[0_4px_20px_rgba(0,0,0,0.2)] z-20 max-w-[260px]">
               <div className="flex items-center gap-3">
-                <div className="text-[#4318FF] text-5xl font-bold leading-none">
+                <div className="text-primary text-5xl font-bold leading-none">
                   25+
                 </div>
                 <div className="font-medium text-[#1E293B]">
@@ -36,14 +36,14 @@ export default function AboutSection() {
             </div>
 
             {/* Decorative glow effects */}
-            <div className="absolute -top-10 -left-10 w-80 h-80 bg-[#4B7BF5]/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-[#4B7BF5]/10 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-[#4B7BF5]/20 rounded-full blur-xl"></div>
+            <div className="absolute -top-10 -left-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-primary/20 rounded-full blur-xl"></div>
           </div>
 
           {/* Right side - Content */}
           <div>
-            <h3 className="text-[#4B7BF5] font-semibold mb-4">
+            <h3 className="text-primary font-semibold mb-4">
               About Our Company
             </h3>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -71,14 +71,16 @@ export default function AboutSection() {
                     >
                       <path
                         d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
-                        stroke="#4B7BF5"
+                        stroke="currentColor"
+                        className="text-primary"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
                       <path
                         d="M10.667 16L14.2223 19.3333L21.3337 12.6667"
-                        stroke="#4B7BF5"
+                        stroke="currentColor"
+                        className="text-primary"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -109,14 +111,16 @@ export default function AboutSection() {
                     >
                       <path
                         d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4"
-                        stroke="#4B7BF5"
+                        stroke="currentColor"
+                        className="text-primary"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
                       <path
                         d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
-                        stroke="#4B7BF5"
+                        stroke="currentColor"
+                        className="text-primary"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -137,7 +141,7 @@ export default function AboutSection() {
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
               <Link
                 href="/about"
-                className="bg-[#4318FF] hover:bg-[#3A63D2] text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2 text-sm shadow-[0_4px_15px_rgba(75,123,245,0.4)]"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2 text-sm shadow-[0_4px_15px_rgba(146,208,80,0.4)]"
               >
                 More About Us
                 <svg
@@ -149,14 +153,14 @@ export default function AboutSection() {
                 >
                   <path
                     d="M3.125 10H16.875"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M11.25 4.375L16.875 10L11.25 15.625"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"

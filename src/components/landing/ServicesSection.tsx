@@ -21,7 +21,7 @@ export default function ServicesSection() {
       title: 'Threat Detection and Response',
       description:
         'Our advanced threat detection systems monitor your network 24/7 and more facility, our identifying and responding.',
-      color: 'bg-[#4318FF]',
+      color: 'bg-primary',
       iconColor: 'text-white',
       link: '/services/threat-detection',
       isActive: true,
@@ -66,7 +66,7 @@ export default function ServicesSection() {
       description:
         "Data security services protect your organization's sensitive data from unauthorized access, use, disclosure, disruption.",
       color: 'bg-[#051431]',
-      iconColor: 'text-[#4B7BF5]',
+      iconColor: 'text-primary',
       link: '/services/data-security',
       isActive: false,
     },
@@ -76,7 +76,7 @@ export default function ServicesSection() {
     <section id="services" className="py-20 bg-[#010817]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h3 className="text-[#4B7BF5] font-semibold mb-3">
+          <h3 className="text-primary font-semibold mb-3">
             Our Top-Notch Services
           </h3>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -90,7 +90,7 @@ export default function ServicesSection() {
               key={service.id}
               className={cn(
                 'rounded-3xl p-8 relative overflow-hidden group',
-                service.isActive ? 'bg-[#4318FF]' : 'bg-[#051431]'
+                service.isActive ? 'bg-primary' : 'bg-[#051431]'
               )}
             >
               {/* Background glow effect */}
@@ -277,7 +277,7 @@ export default function ServicesSection() {
                   'inline-flex items-center text-sm font-medium',
                   service.isActive
                     ? 'text-white hover:text-gray-200'
-                    : 'text-[#4B7BF5] hover:text-white'
+                    : 'text-primary hover:text-white'
                 )}
               >
                 Read More
