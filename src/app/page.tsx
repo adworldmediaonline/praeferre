@@ -1,5 +1,5 @@
-import { forwardRef } from 'react';
-import PageTransition from '../components/landing/PageTransition';
+// import { forwardRef } from 'react';
+// import PageTransition from '../components/landing/PageTransition';
 import Navbar from '../components/landing/Navbar';
 import HeroSection from '../components/landing/HeroSection';
 import AboutSection from '../components/landing/AboutSection';
@@ -12,12 +12,13 @@ import BlogSection from '../components/landing/BlogSection';
 import ContactSection from '../components/landing/ContactSection';
 import Footer from '../components/landing/Footer';
 
-type HomeProps = object;
-type HomeRef = React.ForwardedRef<HTMLDivElement>;
+// type HomeProps = object;
+// type HomeRef = React.ForwardedRef<HTMLDivElement>;
 
-const Home = (props: HomeProps, ref: HomeRef) => {
+export default function Home() {
   return (
-    <PageTransition ref={ref}>
+    // <PageTransition ref={ref}>
+    <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
       <AboutSection />
@@ -29,8 +30,9 @@ const Home = (props: HomeProps, ref: HomeRef) => {
       <FAQSection />
       <ContactSection />
       <Footer />
-    </PageTransition>
+    </div>
+    // </PageTransition>
   );
-};
+}
 
-export default forwardRef(Home);
+// export default forwardRef(Home);
