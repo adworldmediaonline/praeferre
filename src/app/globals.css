@@ -24,10 +24,10 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Custom cybersecurity theme colors */
-  --color-purple: var(--purple);
-  --color-purple-light: var(--purple-light);
-  --color-purple-dark: var(--purple-dark);
+  /* Custom theme colors */
+  --color-lime: var(--lime);
+  --color-lime-light: var(--lime-light);
+  --color-lime-dark: var(--lime-dark);
   --color-blue: var(--blue);
   --color-green: var(--green);
   --color-orange: var(--orange);
@@ -46,67 +46,67 @@
 :root {
   --radius: 0.5rem;
 
-  /* Dark theme colors by default (cybersecurity design) */
-  --background: 222.2 84% 4.9%; /* Deep dark blue-black */
-  --foreground: 210 40% 98%; /* White text */
+  /* Dark theme colors by default */
+  --background: #030711;
+  --foreground: #f8fafc;
 
-  --card: 222.2 84% 6.9%; /* Slightly lighter than background */
-  --card-foreground: 210 40% 98%;
+  --card: #0c1322;
+  --card-foreground: #f8fafc;
 
-  --popover: 222.2 84% 6.9%;
-  --popover-foreground: 210 40% 98%;
+  --popover: #0c1322;
+  --popover-foreground: #f8fafc;
 
-  --primary: 250 84% 54%; /* Purple (#4318ff) - main brand color */
-  --primary-foreground: 210 40% 98%;
+  --primary: #92d050;
+  --primary-foreground: #000000;
 
-  --secondary: 217.2 32.6% 17.5%; /* Dark gray with slight blue tint */
-  --secondary-foreground: 210 40% 98%;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
 
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: #92d050;
+  --accent-foreground: #000000;
 
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f8fafc;
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #92d050;
 
-  /* Custom cybersecurity colors */
-  --purple: 250 84% 54%; /* #4318ff */
-  --purple-light: 263 75% 76%; /* #9f7aea */
-  --purple-dark: 251 84% 48%; /* #3a14e0 */
-  --blue: 210 100% 50%; /* #00a3ff */
-  --green: 160 100% 39%; /* #00c875 */
-  --yellow: 44 100% 50%; /* #ffcb00 */
-  --orange: 33 100% 50%; /* #ff9d00 */
-  --red: 0 100% 65%; /* #ff4d4d */
+  /* Custom brand colors */
+  --lime: #92d050;
+  --lime-light: #b5e27f;
+  --lime-dark: #76ab3c;
+  --blue: #00a3ff;
+  --green: #00c875;
+  --yellow: #ffcb00;
+  --orange: #ff9d00;
+  --red: #ff4d4d;
 }
 
 /* Light theme - not used by default for this design */
 .light {
-  --background: 210 40% 98%;
-  --foreground: 222.2 84% 4.9%;
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
-  --primary: 250 84% 54%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #92d050;
+  --primary-foreground: #000000;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #1e293b;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #92d050;
+  --accent-foreground: #000000;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #92d050;
 }
 
 @layer base {
@@ -128,13 +128,13 @@ html {
 
 /* Custom gradients and backgrounds */
 .bg-hero-gradient {
-  background: linear-gradient(to bottom right, hsl(var(--background)), #080328);
+  background: linear-gradient(to bottom right, var(--background), #080328);
 }
 
 .bg-radial-gradient {
   background: radial-gradient(
     circle at center,
-    rgba(67, 24, 255, 0.15),
+    rgba(146, 208, 80, 0.15),
     transparent 80%
   );
 }
@@ -143,9 +143,5 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(
-    to right,
-    hsl(var(--purple)),
-    hsl(var(--purple-light))
-  );
+  background-image: linear-gradient(to right, var(--lime), var(--lime-light));
 }

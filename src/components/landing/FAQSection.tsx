@@ -14,7 +14,7 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
   return (
     <div
       className={`rounded-xl mb-4 overflow-hidden transition-all duration-300 ${
-        isOpen ? 'bg-[#4318FF]' : 'bg-[#061a3a]'
+        isOpen ? 'bg-[#00C875]' : 'bg-[#061a3a]'
       }`}
     >
       <button
@@ -132,7 +132,7 @@ export default function FAQSection() {
 
           <div className="order-1 lg:order-2 lg:w-1/2">
             <div>
-              <h3 className="text-[#4B7BF5] font-medium mb-3">
+              <h3 className="text-[#00C875] font-medium mb-3">
                 Frequently Asked Questions
               </h3>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
@@ -151,7 +151,7 @@ export default function FAQSection() {
                 </div>
 
                 {/* Overlay glow */}
-                <div className="absolute -inset-1 rounded-2xl border border-[#4B7BF5]/20 shadow-[0_0_15px_rgba(75,123,245,0.2)] pointer-events-none"></div>
+                <div className="absolute -inset-1 rounded-2xl border border-[#00C875]/20 shadow-[0_0_15px_rgba(0,200,117,0.2)] pointer-events-none"></div>
               </div>
             </div>
           </div>

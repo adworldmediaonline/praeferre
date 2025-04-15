@@ -12,7 +12,7 @@ const BlogPost = ({ title, date, image, slug }: BlogPostProps) => {
   return (
     <div className="relative rounded-2xl group transition-all duration-300 hover:-translate-y-1 p-[1px] overflow-hidden">
       {/* Gradient border */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/70 to-purple-500/70 rounded-2xl z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#00C875]/70 to-[#00E5C2]/70 rounded-2xl z-0"></div>
 
       {/* Card content */}
       <div className="relative z-10 flex flex-col overflow-hidden rounded-2xl bg-[#0a1028]/95 h-full">
@@ -31,11 +31,11 @@ const BlogPost = ({ title, date, image, slug }: BlogPostProps) => {
           </h3>
           <Link
             href={`/blog/${slug}`}
-            className="mt-2 group flex items-center gap-2 text-sm font-semibold text-blue-400"
+            className="mt-2 group flex items-center gap-2 text-sm font-semibold text-[#00C875]"
           >
             <span className="relative">
               Read More
-              <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-gradient-to-r from-[#00C875] to-[#00E5C2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function BlogSection() {
     },
     {
       title:
-        'Understanding Enterprise Data Security: Safeguarding Your Organisation’s Most Valuable Asset',
+        "Understanding Enterprise Data Security: Safeguarding Your Organisation's Most Valuable Asset",
       date: 'December 26, 2024',
       image: '/blog/blog2.jpeg',
       slug: 'understanding-enterprise-data-security',
@@ -87,7 +87,7 @@ export default function BlogSection() {
     <section className="w-full py-20 bg-[#050A1C] relative overflow-hidden">
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <div className="inline-block rounded-full bg-blue-500/20 px-6 py-2 text-base font-medium text-blue-400 mb-4">
+          <div className="inline-block rounded-full bg-[#00C875]/20 px-6 py-2 text-base font-medium text-[#00C875] mb-4">
             News & Blog
           </div>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-white">
