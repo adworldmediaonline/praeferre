@@ -21,12 +21,12 @@ const Home = (props: HomeProps, ref: HomeRef) => {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <FAQSection />
       <ServicesSection />
       <WhyChooseSection />
       <TestimonialsSection />
       <PricingSection />
       <BlogSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
     </PageTransition>

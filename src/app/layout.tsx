@@ -5,9 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Secur - Advanced Cybersecurity Solutions',
-  description:
-    'Comprehensive cybersecurity services to protect your digital assets from emerging threats.',
+  title: 'Data Privacy Management | Praeferre',
+  description: `Data privacy management is crucial for defending people's right to privacy and making sure businesses comply with the law and ethical standards.`,
 };
 
 export default function RootLayout({
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }

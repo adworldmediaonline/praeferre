@@ -62,21 +62,23 @@ const BlogPost = ({ title, date, image, slug }: BlogPostProps) => {
 export default function BlogSection() {
   const blogPosts = [
     {
-      title: 'How to Build a Strong Cybersecurity Culture',
+      title:
+        'A Guide on The Data Protection and Digital Information Bill in the United Kingdom',
       date: 'December 26, 2024',
-      image: '/blog/cybersecurity-culture.jpg',
-      slug: 'building-strong-cybersecurity-culture',
+      image: '/blog/blog1.jpeg',
+      slug: 'data-protection-and-digital-information-bill',
     },
     {
-      title: 'Breaking Down the Latest Cyber Threats',
+      title:
+        'Understanding Enterprise Data Security: Safeguarding Your Organisation’s Most Valuable Asset',
       date: 'December 26, 2024',
-      image: '/blog/cyber-threats.jpg',
-      slug: 'latest-cyber-threats-breakdown',
+      image: '/blog/blog2.jpeg',
+      slug: 'understanding-enterprise-data-security',
     },
     {
       title: 'The Importance of Regular Security Audits',
       date: 'December 26, 2024',
-      image: '/blog/security-audits.jpg',
+      image: '/blog/blog3.webp',
       slug: 'importance-of-regular-security-audits',
     },
   ];

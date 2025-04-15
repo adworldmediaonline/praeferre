@@ -125,37 +125,52 @@ export default function HeroSection() {
 
       {/* Trusted by logos section */}
       <div className="container mx-auto px-4 mt-20">
-        <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-          <Image
-            src="/logo-secure-minded.png"
-            alt="Secure Minded"
-            width={150}
-            height={60}
-          />
-          <Image
-            src="/logo-security-protection.png"
-            alt="Security Protection"
-            width={150}
-            height={60}
-          />
-          <Image
-            src="/logo-security.png"
-            alt="Security"
-            width={150}
-            height={60}
-          />
-          <Image
-            src="/logo-security-squared.png"
-            alt="Security Squared"
-            width={150}
-            height={60}
-          />
-          <Image
-            src="/logo-techshield.png"
-            alt="TechShield"
-            width={150}
-            height={60}
-          />
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+            <Image
+              src="/sponsor/comp-1.png"
+              alt="Secure Minded"
+              width={120}
+              height={48}
+              className="object-contain h-full w-auto"
+            />
+          </div>
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+            <Image
+              src="/sponsor/comp-2.png"
+              alt="Security Protection"
+              width={120}
+              height={48}
+              className="object-contain h-full w-auto"
+            />
+          </div>
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+            <Image
+              src="/sponsor/comp-3.png"
+              alt="Security"
+              width={120}
+              height={48}
+              className="object-contain h-full w-auto"
+            />
+          </div>
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+            <Image
+              src="/sponsor/comp-4.png"
+              alt="Security Squared"
+              width={120}
+              height={48}
+              className="object-contain h-full w-auto"
+            />
+          </div>
+          <div className="flex justify-center items-center h-14 bg-white rounded-lg p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-gray-50">
+            <Image
+              src="/sponsor/comp-5.jpg"
+              alt="TechShield"
+              width={120}
+              height={48}
+              className="object-contain h-full w-auto"
+            />
+          </div>
         </div>
       </div>
     </section>

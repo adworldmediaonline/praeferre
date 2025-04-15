@@ -69,28 +69,30 @@ export default function PricingSection() {
         </div>
 
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {pricingPlans.map(plan => (
             <div
               key={plan.id}
               className={cn(
-                'rounded-3xl overflow-hidden relative',
-                plan.isPopular ? 'border border-[#4B7BF5]/30' : ''
+                'rounded-3xl overflow-hidden relative bg-[#051431]',
+                plan.isPopular
+                  ? 'p-[1px] bg-gradient-to-r from-[#4B7BF5] via-[#6169FA] to-[#7B5EFB]'
+                  : 'border border-gray-800/50'
               )}
             >
               {/* Card background */}
               <div
                 className={cn(
-                  'p-8 bg-[#051431] h-full flex flex-col',
+                  'p-8 h-full flex flex-col rounded-3xl bg-[#051431]',
                   plan.isPopular
-                    ? 'bg-gradient-to-b from-[#051D46] to-[#051431]'
-                    : 'bg-[#051431]'
+                    ? 'bg-gradient-to-b from-[#071b36] to-[#051431]'
+                    : ''
                 )}
               >
                 {/* "Popular" badge */}
                 {plan.isPopular && (
-                  <div className="absolute top-6 right-6">
-                    <span className="bg-[#4B7BF5] text-white text-xs font-medium px-3 py-1 rounded-full">
+                  <div className="absolute top-0 right-8">
+                    <span className="bg-[#4B7BF5] text-white text-xs font-semibold px-4 py-1 rounded-b-md">
                       Popular
                     </span>
                   </div>
@@ -100,12 +102,12 @@ export default function PricingSection() {
                 <h3 className="text-2xl font-bold text-white mb-3">
                   {plan.name}
                 </h3>
-                <p className="text-gray-400 text-sm mb-6 min-h-[50px]">
+                <p className="text-gray-400 text-sm mb-6 min-h-[40px]">
                   {plan.description}
                 </p>
 
                 {/* Price */}
-                <div className="mb-10">
+                <div className="mb-8">
                   <div className="flex items-baseline">
                     <span className="text-5xl font-bold text-white">
                       {plan.price}
@@ -118,7 +120,7 @@ export default function PricingSection() {
                 <Link
                   href="#"
                   className={cn(
-                    'flex justify-center items-center h-12 rounded-full text-center font-medium transition-colors mb-10',
+                    'flex justify-center items-center h-12 rounded-full text-center font-medium transition-colors mb-8',
                     plan.isPopular
                       ? 'bg-gradient-to-r from-[#4B7BF5] to-[#7B5EFB] text-white'
                       : 'border border-[#4B7BF5] text-[#4B7BF5] hover:bg-[#4B7BF5]/10'
@@ -128,7 +130,7 @@ export default function PricingSection() {
                 </Link>
 
                 {/* Features list */}
-                <ul className="space-y-4">
+                <ul className="space-y-4 mt-auto">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <div
@@ -136,17 +138,17 @@ export default function PricingSection() {
                           'w-6 h-6 flex-shrink-0 rounded-full flex items-center justify-center',
                           feature.included
                             ? 'bg-[#4B7BF5]/10 text-[#4B7BF5]'
-                            : 'bg-gray-800/50 text-gray-600'
+                            : 'border border-gray-700 text-gray-600'
                         )}
                       >
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          {feature.included ? (
+                        {feature.included ? (
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <path
                               d="M5 12L10 17L20 7"
                               stroke="currentColor"
@@ -154,16 +156,10 @@ export default function PricingSection() {
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
-                          ) : (
-                            <circle
-                              cx="12"
-                              cy="12"
-                              r="9"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                            />
-                          )}
-                        </svg>
+                          </svg>
+                        ) : (
+                          <div className="w-2 h-2 rounded-full bg-gray-700"></div>
+                        )}
                       </div>
                       <span
                         className={cn(

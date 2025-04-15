@@ -21,7 +21,7 @@ export default function TestimonialsSection() {
       id: 1,
       name: 'Mr. Michel Phelops',
       position: 'UX Designer',
-      image: '/testimonials/person1.jpg',
+      image: '/testimonials/person1.webp',
       rating: 4,
       quote:
         "We were impressed with Secur's ability to tailor their services to our specific needs. Their in-depth knowledge and expertise helped us identify and address potential vulnerabilities before they could cause serious damage.",
@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
       id: 2,
       name: 'Sarah Johnson',
       position: 'CTO, TechForward',
-      image: '/testimonials/person2.jpg',
+      image: '/testimonials/person1.webp',
       rating: 5,
       quote:
         "Secur's cybersecurity solutions have completely transformed how we approach digital security. Their team identified vulnerabilities we weren't even aware of and implemented robust protection systems that give us peace of mind.",
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
       id: 3,
       name: 'David Miller',
       position: 'Director of IT',
-      image: '/testimonials/person3.jpg',
+      image: '/testimonials/person1.webp',
       rating: 5,
       quote:
         'After experiencing a security breach with our previous provider, switching to Secur was the best decision we made. Their incident response team is exceptional, and their preventative measures are comprehensive and effective.',
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
           <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 hidden md:block">
             <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-600/20 bg-purple-600/20">
               <Image
-                src="/testimonials/person2.jpg"
+                src="/testimonials/person1.webp"
                 alt="Testimonial"
                 width={96}
                 height={96}
@@ -115,7 +115,7 @@ export default function TestimonialsSection() {
           <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 hidden md:block">
             <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-amber-500/20 bg-amber-500/20">
               <Image
-                src="/testimonials/person3.jpg"
+                src="/testimonials/person1.webp"
                 alt="Testimonial"
                 width={96}
                 height={96}

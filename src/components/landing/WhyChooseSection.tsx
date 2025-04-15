@@ -49,7 +49,7 @@ export default function WhyChooseSection() {
           <div className="relative">
             <div className="relative z-10 h-[500px] lg:h-[600px] w-full overflow-hidden rounded-3xl bg-gradient-to-b from-[#094AB2]/80 to-[#042454]">
               <Image
-                src="/shield-lock-blue.png"
+                src="/whyChooseUs/why-choose-us.webp"
                 alt="Advanced Security Shield"
                 fill
                 className="object-cover object-center mix-blend-luminosity"

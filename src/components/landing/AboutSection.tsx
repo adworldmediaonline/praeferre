@@ -10,7 +10,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative z-10 h-[500px] lg:h-[600px] w-full overflow-hidden rounded-3xl">
               <Image
-                src="/shield-circuit.png"
+                src="/about/3d-internet-secuirty-badge-scaled.webp"
                 alt="Cybersecurity Shield"
                 fill
                 className="object-cover"
