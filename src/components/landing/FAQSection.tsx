@@ -140,12 +140,13 @@ export default function FAQSection() {
               </h2>
 
               <div className="relative">
-                <div className="rounded-2xl overflow-hidden max-w-md">
+                <div className="rounded-2xl overflow-hidden max-w-md h-[300px] w-[500px]">
                   <Image
-                    src="/faq-lock.jpg"
+                    src="/faq/cybersecurity-banner.webp"
                     alt="Cybersecurity padlock"
-                    width={500}
-                    height={300}
+                    // width={500}
+                    // height={300}
+                    fill
                     className="w-full h-auto object-cover"
                   />
                 </div>
