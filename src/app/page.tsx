@@ -20,7 +20,7 @@ export default function Home() {
     // <PageTransition ref={ref}>
     <div className="min-h-screen bg-background">
       <Navbar />
-      <HeroSection />
+      <HeroSection variant="video-split" />
       <AboutSection />
       <ServicesSection />
       <WhyChooseSection />

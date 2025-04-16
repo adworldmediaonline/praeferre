@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
       id: 1,
       name: 'Sarah Johnson',
       position: 'CTO, TechGlobal',
-      image: '/testimonials/testimonial-1.jpg',
+      image: '/testimonials/person1.webp',
       rating: 5,
       content:
         "Implementing Secur's cybersecurity framework has been transformative for our organization. Not only did they identify vulnerabilities we weren't aware of, but they also provided a strategic roadmap for enhancing our security posture.",
@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
       id: 2,
       name: 'Michael Chen',
       position: 'CEO, DataFlow Systems',
-      image: '/testimonials/testimonial-2.jpg',
+      image: '/testimonials/person1.webp',
       rating: 5,
       content:
         "We've worked with several security firms over the years, but Secur stands out for their technical expertise and customer-centric approach. Their team became an extension of our own, ensuring we were protected every step of the way.",
@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
       id: 3,
       name: 'Emily Rodriguez',
       position: 'CISO, HealthGuard',
-      image: '/testimonials/testimonial-3.jpg',
+      image: '/testimonials/person1.webp',
       rating: 5,
       content:
         'In the healthcare sector, data security is non-negotiable. Secur not only understood our unique challenges but provided tailored solutions that ensured our patient data remained protected while meeting all regulatory requirements.',
@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
       id: 4,
       name: 'David Patel',
       position: 'VP of IT, FinSecure',
-      image: '/testimonials/testimonial-4.jpg',
+      image: '/testimonials/person1.webp',
       rating: 5,
       content:
         'After experiencing a security breach, we turned to Secur for their incident response expertise. Their team quickly contained the threat, conducted a thorough forensic analysis, and implemented robust measures to prevent future incidents.',
