@@ -14,7 +14,7 @@ export default function AboutSection() {
                 alt="Cybersecurity Shield"
                 fill
                 className="object-cover"
-                priority
+                loading="lazy"
               />
 
               {/* Decorative border glow */}

@@ -148,6 +148,7 @@ export default function FAQSection() {
                     // height={300}
                     fill
                     className="w-full h-auto object-cover"
+                    loading="lazy"
                   />
                 </div>
 

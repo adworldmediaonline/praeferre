@@ -53,7 +53,7 @@ export default function WhyChooseSection() {
                 alt="Advanced Security Shield"
                 fill
                 className="object-cover object-center mix-blend-luminosity"
-                priority
+                loading="lazy"
               />
 
               {/* Digital circuit pattern overlay */}
