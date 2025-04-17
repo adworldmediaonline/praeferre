@@ -17,7 +17,7 @@ export default function Footer() {
               Discover How We Can{' '}
               <span className="text-[#00C875]">Support</span> Your
               <br />
-              Secure Advancement.
+              Praeferre Advancement.
             </h2>
           </div>
           <Link
@@ -59,7 +59,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-6">
-              Since 1999, Secur has been a trusted leader in cybersecurity,
+              Since 1999, Praeferre has been a trusted leader in cybersecurity,
               protecting digital assets with.
             </p>
             <div className="flex space-x-4">
@@ -409,7 +409,7 @@ export default function Footer() {
           <p className="text-gray-400 mb-4 md:mb-0">
             © 2024 By{' '}
             <Link href="/" className="text-[#00C875] hover:underline">
-              Secur
+              Praeferre
             </Link>
             . All Rights Reserved.
           </p>

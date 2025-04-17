@@ -7,7 +7,7 @@ import Image from 'next/image';
 // import 'next-cloudinary/dist/cld-video-player.css';
 
 type HeroSectionProps = {
-  variant?: 'default' | 'video-split' | 'video-overlay';
+  variant?: 'default' | 'video-split' | 'video-overlay' | 'premium';
   videoUrl?: string;
 };
 
@@ -416,6 +416,175 @@ export default function HeroSection({
                 </div>
               </div>
             </div>
+          ) : variant === 'premium' ? (
+            /* PREMIUM VARIANT - elegant, high-end design with primary color */
+            <div className="h-full opacity-100 w-full">
+              <div className="min-h-[90vh] relative">
+                {/* Premium-specific background elements */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0A1224] via-[#0F172A] to-[#131B2E] opacity-80 z-[1]"></div>
+                <div className="absolute inset-0 bg-[url('/binary-pattern.png')] opacity-20 z-[2]"></div>
+
+                {/* Decorative elements */}
+                <div className="absolute top-20 right-20 w-96 h-96 rounded-full bg-gradient-to-r from-[#00C875]/20 to-[#00A36D]/5 blur-[100px] z-[2]"></div>
+                <div className="absolute bottom-20 left-20 w-96 h-96 rounded-full bg-gradient-to-r from-[#00C875]/10 to-[#4F46E5]/10 blur-[100px] z-[2]"></div>
+
+                <div className="container mx-auto px-4 relative z-10 h-full flex flex-col items-center pt-28 pb-20">
+                  <div className="relative w-full max-w-5xl mx-auto mb-16">
+                    {/* Premium badge */}
+                    <div className="flex justify-center mb-8">
+                      <div className="px-6 py-1.5 bg-gradient-to-r from-[#00C875]/20 to-[#00A36D]/10 border border-[#00C875]/30 rounded-full">
+                        <span className="text-[#00C875] text-sm font-medium uppercase tracking-widest">
+                          Premium Protection
+                        </span>
+                      </div>
+                    </div>
+
+                    <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00C875] to-[#00E087] uppercase leading-tight">
+                        Enterprise-Grade
+                      </span>
+                      <span className="block text-white mt-3">
+                        Cybersecurity Solutions
+                      </span>
+                    </h1>
+
+                    <p className="text-center text-gray-300 mb-10 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                      Tailored security solutions designed for enterprise
+                      businesses. Our advanced threat detection and mitigation
+                      services deliver unparalleled protection for
+                      mission-critical systems.
+                    </p>
+
+                    <div className="grid md:grid-cols-3 gap-6 mb-12">
+                      <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center transform transition-transform hover:scale-105 hover:bg-white/10">
+                        <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#00C875]/30 to-transparent flex items-center justify-center mx-auto mb-4">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6 text-[#00C875]"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                            />
+                          </svg>
+                        </div>
+                        <h3 className="text-white font-semibold text-lg mb-2">
+                          Advanced Encryption
+                        </h3>
+                        <p className="text-gray-400 text-sm">
+                          Military-grade encryption protecting your most
+                          sensitive data assets
+                        </p>
+                      </div>
+
+                      <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center transform transition-transform hover:scale-105 hover:bg-white/10">
+                        <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#00C875]/30 to-transparent flex items-center justify-center mx-auto mb-4">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6 text-[#00C875]"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                            />
+                          </svg>
+                        </div>
+                        <h3 className="text-white font-semibold text-lg mb-2">
+                          Threat Intelligence
+                        </h3>
+                        <p className="text-gray-400 text-sm">
+                          Real-time monitoring and proactive defense against
+                          emerging threats
+                        </p>
+                      </div>
+
+                      <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 text-center transform transition-transform hover:scale-105 hover:bg-white/10">
+                        <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#00C875]/30 to-transparent flex items-center justify-center mx-auto mb-4">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6 text-[#00C875]"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                            />
+                          </svg>
+                        </div>
+                        <h3 className="text-white font-semibold text-lg mb-2">
+                          Compliance Shield
+                        </h3>
+                        <p className="text-gray-400 text-sm">
+                          Comprehensive compliance management for regulatory
+                          requirements
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Form with premium styling */}
+                    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
+                      <div className="flex flex-col sm:flex-row gap-3 backdrop-blur-sm bg-white/5 p-2 rounded-full border border-white/10">
+                        <input
+                          type="email"
+                          placeholder="Enter Your Email"
+                          value={email}
+                          onChange={e => setEmail(e.target.value)}
+                          className="bg-black/30 rounded-full px-6 py-4 flex-grow text-white focus:outline-none focus:ring-2 focus:ring-[#00C875]/50 text-sm"
+                          required
+                        />
+                        <button
+                          type="submit"
+                          className="bg-gradient-to-r from-[#00C875] to-[#00A36D] hover:from-[#00E087] hover:to-[#00C875] text-white font-medium rounded-full px-8 py-4 transition-all duration-300 text-sm shadow-lg shadow-[#00C875]/20"
+                        >
+                          Request Enterprise Consultation
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                  {/* Enhanced premium sponsor section */}
+                  <div className="w-full mt-auto">
+                    <div className="text-center mb-6">
+                      <p className="text-gray-300 text-sm font-medium tracking-wide uppercase">
+                        Trusted by Industry Leaders
+                      </p>
+                    </div>
+                    <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6 max-w-4xl mx-auto bg-gradient-to-r from-black/40 via-black/60 to-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/5">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <div
+                          key={i}
+                          className="flex justify-center items-center h-12 md:h-16 bg-white rounded-lg p-2 sm:p-3 shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-[#00C875]/10 hover:translate-y-[-2px] hover:bg-gray-50"
+                        >
+                          <Image
+                            src={`/sponsor/comp-${i + 1}${
+                              i === 4 ? '.jpg' : '.png'
+                            }`}
+                            alt={`Premium Partner ${i + 1}`}
+                            width={100}
+                            height={40}
+                            className="object-contain h-full w-auto"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : null}
         </div>
 
@@ -423,6 +592,10 @@ export default function HeroSection({
         <div
           className={`container mx-auto px-4 mt-8 md:mt-20 ${
             isVideoVariant ? 'relative z-10' : ''
+          } ${
+            variant === 'video-overlay' || variant === 'premium'
+              ? 'hidden md:block'
+              : ''
           }`}
         >
           {variant === 'video-overlay' && (
